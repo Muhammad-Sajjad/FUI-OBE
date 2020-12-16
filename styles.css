@@ -1,4 +1,18 @@
 body{
     background: url("content/light.png");
     background-size: 100%;
+    text-align: center;
+}
+
+.login{
+    margin-top: 5%;
+}
+
+.title{
+    margin-top: 7% 0 2%;
+}
+
+.logo{
+    /* text-align: center; */
+    height: 20rem;
 }

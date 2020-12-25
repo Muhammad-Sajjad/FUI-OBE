@@ -5,6 +5,10 @@ section{
     color: #7F7F7F;
 }
 
+div{
+    margin-bottom: 7px;
+}
+
 body{
     background: url("content/light.png");
     background-size: 100%;
@@ -29,6 +33,7 @@ body{
 .entry{
     position: relative;
     left: 40%;
+    padding: 0 3%;
 }
 
 .form-label{

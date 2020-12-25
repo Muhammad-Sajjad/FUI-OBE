@@ -6,8 +6,9 @@
     <title>FUI OBE System</title>
     <!-- css import -->
     <link rel="stylesheet" href="styles.css">
+    <!-- font family import -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
     <!-- bootstrap import -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -15,17 +16,22 @@
 <body>
     <section>
     <div class="container-fluid">
-        <h1 class="title">FUI OBE System</h1>
+        <div class="row">
+            <div class="col-12">
+        <h1 class="title">FUI OBE System</h1></div>
+        <div class="col-12">
         <img class="logo" src="content/logo.png" alt="Logo of University">
+    </div>
         <h4 id="faculty-login-title">Faculty Login</h4>
     </div>
-    <div class="row">
         <div class="col-12">
-            <label for="email" class="form-label">Your Email :</label>
-            <input class="entry input-group-text" type="email" name="email" id="email">
-            <label for="pass" class="form-label">Password :</label>
-            <input class="entry input-group-text" type="password" name="password" id="pass">
+            <!-- <label for="email" class="form-label">Your Email :</label> -->
+            <input class="entry input-group-text" placeholder="Enter your email" type="email" name="email" id="email">
+            <!-- <label for="pass" class="form-label">Password :</label> -->
+        </div>
+            <div class="col-12"><input class="entry input-group-text" placeholder="Enter your password" type="password" name="password" id="pass">
             <button id="sign" class="btn btn-primary">Sign in</button>
+        </div>
         </div>
     </div>
 </section>

@@ -10,7 +10,7 @@ div {
 }
 
 body {
-    background: url("content/light.png");
+    background: url("../../content/light.png");
     background-size: 100%;
     /* text-align: center; */
 }
@@ -49,6 +49,10 @@ body {
 .dashboardlogo {
     text-align: left;
     height: 10rem;
+}
+
+.icon{
+    height: 8rem;
 }
 
 .nightMood {

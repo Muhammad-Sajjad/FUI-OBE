@@ -10,6 +10,20 @@ body {
   /* text-align: center; */
 }
 
+table tr th {
+  border-color: black;
+  border-width: 1px;
+  background-color: #2a6dff;
+  color: aliceblue;
+  text-align: center;
+}
+table tr td {
+  border-color: black;
+  border-width: 1px;
+  background-color: white;
+  text-align: center;
+}
+
 .title {
   /* margin: 3% 0 2%; */
   font-family: "lato";

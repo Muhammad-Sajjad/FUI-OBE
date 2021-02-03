@@ -38,7 +38,7 @@
                     <a class="px-3 mx-5 btn btn-outline-light" href="../pages/dashboard.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="px-3 mx-5 btn btn-outline-light" href="../pages/marks.html">MARKS</a>
+                    <a class="px-3 mx-5 btn btn-outline-light" href="../pages/marksSummary.html">MARKS</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="px-3 mx-5 btn btn-outline-light" href="../pages/reports.html">REPORTS</a>
@@ -62,33 +62,83 @@
         <section class="flex flex-col mt-3">
             <h3 class="relative font-bold left-44">Marks</h3>
             <div class="flex justify-around mt-3 w-80">
-                <button class="px-2 py-1 text-blue-600 border-blue-400 border-1 bg-light">Summary</button>
-                <button class="px-2 py-1 text-white border-blue-400 border-1 bg-primary">Add Marks</button>
+                <a class="px-2 py-1 text-blue-600 no-underline border-blue-400 border-1 bg-light"
+                    href="marksSummary.html">Summary</a>
+                <a class="px-2 py-1 text-white no-underline border-blue-400 border-1 bg-primary" href="#">Add
+                    Marks</a>
             </div>
             <div class="flex items-center justify-around mt-3 w-96">
                 <label for="courses">Select Course :</label>
-                <select name="courses" id="">
+                <select name="courses" id="" class="border-black rounded-sm border-1">
                     <option value="SRS-BCSE 7A">SRS-BCSE 7A</option>
                     <option value="SRS-BCSE 7A">SRS-BCSE 7A</option>
                     <option value="SRS-BCSE 7A">SRS-BCSE 7A</option>
                     <option value="SRS-BCSE 7A">SRS-BCSE 7A</option>
                 </select>
             </div>
+            <div class="flex justify-between mt-3">
+                <label for="courses">*Select Marks Type :</label>
+                <select name="courses" id="" class="border-black rounded-sm border-1">
+                    <option value="SRS-BCSE 7A">Assignment</option>
+                    <option value="SRS-BCSE 7A">Assignment</option>
+                    <option value="SRS-BCSE 7A">Assignment</option>
+                    <option value="SRS-BCSE 7A">Assignment</option>
+                </select>
+                <label for="courses">*Select Title :</label>
+                <select name="courses" id="" class="border-black rounded-sm border-1">
+                    <option value="SRS-BCSE 7A">Assignment-1</option>
+                    <option value="SRS-BCSE 7A">Assignment-1</option>
+                    <option value="SRS-BCSE 7A">Assignment-1</option>
+                    <option value="SRS-BCSE 7A">Assignment-1</option>
+                </select>
+                <label for="courses">*Total Marks :</label>
+                <input type="number" name="totalMarks" id="" class="border-black rounded-sm border-1">
+                <label for="courses">*Enter Date :</label>
+                <input type="date" name="date" id="" class="border-black rounded-sm border-1">
+            </div>
+            <div class="flex items-center justify-around mt-3 w-96">
+                <h4>Set OBE CLOs</h4>
+                <button class="p-1 text-white bg-blue-600 rounded-sm">Add Question</button>
+            </div>
 
-            <table class="w-full mt-5">
+            <table class="mt-3">
                 <tr>
-                    <th>S.no.</th>
-                    <th>Marks Type</th>
-                    <th>Title</th>
-                    <th>Date</th>
-                    <th>Edit / Delete</th>
+                    <th>Question</th>
+                    <th>CLO ID</th>
+                    <th>Description</th>
+                    <th>Total Marks</th>
+                    <th>Remove</th>
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>Assignment</td>
-                    <td>Assignment-1</td>
-                    <td>20-4-2020</td>
-                    <td><button class="px-2">Edit</button><button class="px-2">Delete</button></td>
+                    <td>
+                        <select name="CLO" id="">
+                            <option value="CLO1">CLO1</option>
+                            <option value="CLO1">CLO2</option>
+                            <option value="CLO1">CLO3</option>
+                            <option value="CLO1">CLO4</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="description" id="" class="w-full"></td>
+                    <td><input type="number" name="marks" id="" class="w-full"></td>
+                    <td><button>Remove</button></td>
+                </tr>
+            </table>
+
+            <table class="mt-4">
+                <tr>
+                    <th>S.no.</th>
+                    <th>Registration no.</th>
+                    <th>Student Name</th>
+                    <th>Q1</th>
+                    <th>Obtained Marks</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>F17BCSE049</td>
+                    <td>Syed Muhammad Sajjad</td>
+                    <td><input type="number" name="totalMarks" id="" class="w-full"></td>
+                    <td><input type="number" name="obtainedMarks" id="" class="w-full"></td>
                 </tr>
             </table>
         </section>

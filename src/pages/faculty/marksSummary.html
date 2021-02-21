@@ -13,6 +13,8 @@
     <!-- font family import -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- scripts import -->
+    <script src="../../js/nightMood.js"></script>
     <!-- bootstrap import -->
     <link rel="stylesheet" type="text/css" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
     </link>
@@ -53,14 +55,14 @@
     </nav>
     <section class="mt-3">
         <div class="flex flex-wrap justify-between px-10">
-            <img src="../../../content/logo.png" class="h-1/6 w-72">
+            <img src="../../../content/logo.svg" class="h-24 w-52" id="dark">
             <div class="px-10 form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                <input class="form-check-input" type="checkbox" onclick="nightMood()" id="flexSwitchCheckDefault" />
                 <label>Night Mood</label>
             </div>
         </div>
         <section class="flex flex-col mt-3">
-            <h3 class="relative font-bold left-44">Marks</h3>
+            <h3 class="font-bold left-44">Marks</h3>
             <div class="flex justify-around mt-3 w-80">
                 <a class="px-2 py-1 text-blue-600 no-underline border-blue-400 border-1 bg-light" href="#">Summary</a>
                 <a class="px-2 py-1 text-white no-underline border-blue-400 border-1 bg-primary"
